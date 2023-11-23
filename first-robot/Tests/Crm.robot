@@ -18,7 +18,7 @@ Should be able to add new customer
 
     #open close browser
     log                         Starting the test case
-    open browser                https://automationplayground.com/crm/   firefox
+    open browser                https://automationplayground.com/crm/
 
     #resize the close browser
     set window position         x=50    y=50
@@ -43,6 +43,8 @@ Should be able to add new customer
     select from list by value    id=StateOrRegion   TX
     select radio button         gender              female
     select checkbox             name=promos-name
+    click button                Submit
+    wait until page contains    Success! New customer added.
 
     sleep                       3s
     close browser
