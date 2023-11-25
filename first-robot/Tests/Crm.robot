@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation               This is some basic info about the whole suite
-Resource        Resources/Customer.robot
-Resource        Resources/Common.robot
+Resource        ../Resources/Customer.robot
+Resource        ../Resources/Common.robot
 
 #run the script
 #robot -d results Tests/Crm.robot

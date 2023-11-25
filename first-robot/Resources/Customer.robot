@@ -5,6 +5,7 @@ Library    SeleniumLibrary
 *** Keywords ***
 
 test login
+    go to                       https://automationplayground.com/crm/
     click link                  id=SignIn
     page should contain         Login
     input text                  id=email-id     joku@toinen.com
@@ -13,7 +14,7 @@ test login
     page should contain         Our Happy
 
 add customer
-    go to                       https://automationplayground.com/crm/
+
     click link                  id=new-customer
     page should contain         Add Customer
 
