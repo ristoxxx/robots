@@ -12,26 +12,42 @@ Library                     SeleniumLibrary
 Should be able to add new customer
     [Documentation]             This is the info about the test
     [Tags]                      1006 Smoke contacts
-    #initialize selenium
-    Set selenium speed          .2s
-    Set selenium timeout        10s
+    initialize selenium
+    open blank browser
+    resize the browser
+    test login
+    add customer
 
-    #open close browser
+
+
+
+
+
+    sleep                       3s
+    close browser
+
+*** Keywords ***
+initialize selenium
+      Set selenium speed          .2s
+      Set selenium timeout        10s
+
+open blank browser
     log                         Starting the test case
     open browser                https://automationplayground.com/crm/
 
-    #resize the close browser
+resize the browser
     set window position         x=50    y=50
     set window size             width=1024  height=800
 
+test login
     click link                  id=SignIn
     page should contain         Login
-
     input text                  id=email-id     joku@toinen.com
     input text                  id=password     txt
     click button                Submit
     page should contain         Our Happy
 
+add customer
     click link                  id=new-customer
     page should contain         Add Customer
 
@@ -45,8 +61,3 @@ Should be able to add new customer
     select checkbox             name=promos-name
     click button                Submit
     wait until page contains    Success! New customer added.
-
-    sleep                       3s
-    close browser
-
-*** Keywords ***
