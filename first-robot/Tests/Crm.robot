@@ -2,8 +2,11 @@
 Documentation           This is some basic info about the whole suite
 Resource                ../Resources/Customer.robot
 Resource                ../Resources/Common.robot
+Resource                ../Resources/Data.robot
+Suite Setup             insert testing data
 Test Setup              begin web test
 Test Teardown           end web test
+Suite Teardown          remove testing data
 #run the script
 #robot -d results Tests/Crm.robot
 *** Variables ***
