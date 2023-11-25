@@ -1,11 +1,13 @@
 *** Settings ***
+Library  SeleniumLibrary
+Library  Collections
 
 
 
 *** Test Cases ***
 Opn brwser
-    #open browser (common)
     log     hello
+
     Open Browser    wwww.yle.fi     edge
 
 
