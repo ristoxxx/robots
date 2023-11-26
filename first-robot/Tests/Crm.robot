@@ -16,7 +16,7 @@ Suite Teardown          remove testing data
 Should be able to add new customer
     [Documentation]             This is the info about the test
     [Tags]                      1006 Smoke contacts
-    Customer.test login
+    Customer.test login         https://automationplayground.com/crm/
     Customer.add customer
 
 *** Keywords ***

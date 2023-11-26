@@ -1,11 +1,13 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
 
+*** Variables ***
 
 *** Keywords ***
 
 test login
-    go to                       https://automationplayground.com/crm/
+    [Arguments]                 ${start_url}
+    go to                       ${start_url}
     click link                  id=SignIn
     page should contain         Login
     input text                  id=email-id     joku@toinen.com
