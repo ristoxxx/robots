@@ -2,7 +2,8 @@
 Library     SeleniumLibrary
 
 *** Variables ***
-
+${CUSTOMER_USER_NAME}           hei@moi.com
+${CUSTOMER_PASSWORD}            123
 *** Keywords ***
 
 test login
@@ -10,8 +11,8 @@ test login
     go to                       ${start_url}
     click link                  id=SignIn
     page should contain         Login
-    input text                  id=email-id     joku@toinen.com
-    input text                  id=password     txt
+    input "user name"           ${CUSTOMER_USER_NAME}
+    input "password"            ${CUSTOMER_PASSWORD}
     click button                Submit
     page should contain         Our Happy
 
@@ -30,3 +31,12 @@ add customer
     select checkbox             name=promos-name
     click button                Submit
     wait until page contains    Success! New customer added.
+
+input "user name"
+    [Arguments]                                 ${customer_user_name}
+    input text                  id=email-id     ${customer_user_name}
+    log            filling email field with ${customer_user_name}
+
+input "password"
+    [Arguments]                                 ${customer_password}
+    input text                  id=password     ${customer_password}
