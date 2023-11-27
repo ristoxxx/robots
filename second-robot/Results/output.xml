@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.7 on win32)" generated="20231127 00:13:47.128" rpa="true" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.7 on win32)" generated="20231127 19:05:32.470" rpa="true" schemaversion="4">
 <suite id="s1" name="Playground" source="C:\dev\robots\second-robot\Tests\Playground.robot">
 <test id="s1-t1" name="Customer should be able to open website" line="15">
 <kw name="open website" library="Common" type="SETUP">
@@ -9,46 +9,46 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231127 00:13:47.279" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20231127 00:13:47.279" endtime="20231127 00:13:48.603"/>
+<msg timestamp="20231127 19:05:32.730" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20231127 19:05:32.730" endtime="20231127 19:05:38.003"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:47.278" endtime="20231127 00:13:48.603"/>
+<status status="PASS" starttime="20231127 19:05:32.722" endtime="20231127 19:05:38.003"/>
 </kw>
 <kw name="Go to landing page" library="PlaygroundApp">
 <kw name="Navigate to" library="Landing">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231127 00:13:48.604" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
-<status status="PASS" starttime="20231127 00:13:48.604" endtime="20231127 00:13:51.113"/>
+<msg timestamp="20231127 19:05:38.012" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<status status="PASS" starttime="20231127 19:05:38.003" endtime="20231127 19:05:41.116"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:48.603" endtime="20231127 00:13:51.113"/>
+<status status="PASS" starttime="20231127 19:05:38.003" endtime="20231127 19:05:41.116"/>
 </kw>
 <kw name="Test that site opens" library="Landing">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${GREETINGS_TEXT}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20231127 00:13:51.113" endtime="20231127 00:13:51.124"/>
+<status status="PASS" starttime="20231127 19:05:41.117" endtime="20231127 19:05:41.131"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:51.113" endtime="20231127 00:13:51.124"/>
+<status status="PASS" starttime="20231127 19:05:41.116" endtime="20231127 19:05:41.131"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:48.603" endtime="20231127 00:13:51.124"/>
+<status status="PASS" starttime="20231127 19:05:38.003" endtime="20231127 19:05:41.131"/>
 </kw>
 <kw name="close website" library="Common" type="TEARDOWN">
 <kw name="Sleep" library="BuiltIn">
 <arg>3 s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231127 00:13:54.139" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20231127 00:13:51.125" endtime="20231127 00:13:54.139"/>
+<msg timestamp="20231127 19:05:44.135" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231127 19:05:41.133" endtime="20231127 19:05:44.135"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231127 00:13:54.139" endtime="20231127 00:13:56.292"/>
+<status status="PASS" starttime="20231127 19:05:44.135" endtime="20231127 19:05:45.978"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:51.125" endtime="20231127 00:13:56.292"/>
+<status status="PASS" starttime="20231127 19:05:41.133" endtime="20231127 19:05:45.978"/>
 </kw>
 <doc>Test that page opens</doc>
-<status status="PASS" starttime="20231127 00:13:47.278" endtime="20231127 00:13:56.293"/>
+<status status="PASS" starttime="20231127 19:05:32.722" endtime="20231127 19:05:45.978"/>
 </test>
 <test id="s1-t2" name="Customer should be able to go to &quot;Team&quot; website" line="20">
 <kw name="open website" library="Common" type="SETUP">
@@ -58,50 +58,50 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231127 00:13:56.299" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20231127 00:13:56.299" endtime="20231127 00:13:57.579"/>
+<msg timestamp="20231127 19:05:45.978" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20231127 19:05:45.978" endtime="20231127 19:05:50.983"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:56.298" endtime="20231127 00:13:57.579"/>
+<status status="PASS" starttime="20231127 19:05:45.978" endtime="20231127 19:05:50.983"/>
 </kw>
 <kw name="Go to landing page" library="PlaygroundApp">
 <kw name="Navigate to" library="Landing">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231127 00:13:57.580" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
-<status status="PASS" starttime="20231127 00:13:57.580" endtime="20231127 00:13:59.470"/>
+<msg timestamp="20231127 19:05:50.992" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<status status="PASS" starttime="20231127 19:05:50.990" endtime="20231127 19:05:52.955"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:57.580" endtime="20231127 00:13:59.470"/>
+<status status="PASS" starttime="20231127 19:05:50.989" endtime="20231127 19:05:52.955"/>
 </kw>
 <kw name="Test that site opens" library="Landing">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${GREETINGS_TEXT}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20231127 00:13:59.470" endtime="20231127 00:13:59.481"/>
+<status status="PASS" starttime="20231127 19:05:52.955" endtime="20231127 19:05:52.967"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:59.470" endtime="20231127 00:13:59.481"/>
+<status status="PASS" starttime="20231127 19:05:52.955" endtime="20231127 19:05:52.972"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:57.580" endtime="20231127 00:13:59.481"/>
+<status status="PASS" starttime="20231127 19:05:50.983" endtime="20231127 19:05:52.972"/>
 </kw>
 <kw name="Go to &quot;Team&quot; page" library="PlaygroundApp">
 <kw name="Select &quot;Teams&quot; Page" library="TopNav">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${TOP_NAV_TEAM_LINK}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20231127 00:13:59.482" level="INFO">Clicking link 'xpath=//*[@id="bs-example-navbar-collapse-1"]/ul/li[5]/a'.</msg>
-<status status="PASS" starttime="20231127 00:13:59.482" endtime="20231127 00:13:59.516"/>
+<msg timestamp="20231127 19:05:52.972" level="INFO">Clicking link 'xpath=//*[@id="bs-example-navbar-collapse-1"]/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20231127 19:05:52.972" endtime="20231127 19:05:53.228"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:59.482" endtime="20231127 00:13:59.516"/>
+<status status="PASS" starttime="20231127 19:05:52.972" endtime="20231127 19:05:53.228"/>
 </kw>
 <kw name="Verify page loaded" library="Team">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${TEAM_HEADER_LABEL}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231127 00:13:59.517" endtime="20231127 00:13:59.527"/>
+<status status="PASS" starttime="20231127 19:05:53.228" endtime="20231127 19:05:53.251"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:59.516" endtime="20231127 00:13:59.527"/>
+<status status="PASS" starttime="20231127 19:05:53.228" endtime="20231127 19:05:53.251"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:59.481" endtime="20231127 00:13:59.527"/>
+<status status="PASS" starttime="20231127 19:05:52.972" endtime="20231127 19:05:53.251"/>
 </kw>
 <kw name="Validate &quot;Team&quot; page" library="PlaygroundApp">
 <kw name="Validate &quot;Team&quot; page" library="Team">
@@ -109,38 +109,38 @@
 <var>${ElementText}</var>
 <arg>${TEAM_HEADER_LABEL}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20231127 00:13:59.539" level="INFO">${ElementText} = OUR AMAZING TEAM</msg>
-<status status="PASS" starttime="20231127 00:13:59.527" endtime="20231127 00:13:59.539"/>
+<msg timestamp="20231127 19:05:53.294" level="INFO">${ElementText} = OUR AMAZING TEAM</msg>
+<status status="PASS" starttime="20231127 19:05:53.256" endtime="20231127 19:05:53.294"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${ElementText}</arg>
 <arg>Our Amazing Team</arg>
 <arg>ignore_case=true</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20231127 00:13:59.539" endtime="20231127 00:13:59.540"/>
+<status status="PASS" starttime="20231127 19:05:53.294" endtime="20231127 19:05:53.300"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:59.527" endtime="20231127 00:13:59.540"/>
+<status status="PASS" starttime="20231127 19:05:53.251" endtime="20231127 19:05:53.300"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:59.527" endtime="20231127 00:13:59.540"/>
+<status status="PASS" starttime="20231127 19:05:53.251" endtime="20231127 19:05:53.300"/>
 </kw>
 <kw name="close website" library="Common" type="TEARDOWN">
 <kw name="Sleep" library="BuiltIn">
 <arg>3 s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231127 00:14:02.548" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20231127 00:13:59.540" endtime="20231127 00:14:02.548"/>
+<msg timestamp="20231127 19:05:56.302" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231127 19:05:53.301" endtime="20231127 19:05:56.302"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231127 00:14:02.548" endtime="20231127 00:14:04.688"/>
+<status status="PASS" starttime="20231127 19:05:56.302" endtime="20231127 19:05:58.236"/>
 </kw>
-<status status="PASS" starttime="20231127 00:13:59.540" endtime="20231127 00:14:04.688"/>
+<status status="PASS" starttime="20231127 19:05:53.301" endtime="20231127 19:05:58.236"/>
 </kw>
 <doc>Test that page opens</doc>
-<status status="PASS" starttime="20231127 00:13:56.296" endtime="20231127 00:14:04.689"/>
+<status status="PASS" starttime="20231127 19:05:45.978" endtime="20231127 19:05:58.236"/>
 </test>
 <doc>Yeee!!!</doc>
-<status status="PASS" starttime="20231127 00:13:47.130" endtime="20231127 00:14:04.691"/>
+<status status="PASS" starttime="20231127 19:05:32.476" endtime="20231127 19:05:58.244"/>
 </suite>
 <statistics>
 <total>
